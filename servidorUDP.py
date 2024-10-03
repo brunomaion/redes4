@@ -13,7 +13,7 @@ while True:
 # Buffer de 1024 bytes
   data, address = udp_server_socket.recvfrom(1024)
 
-  print(f"Mensagem recebida: {data.decode()}
+  print(f"Mensagem recebida: {data.decode()}")
   # Enviar uma resposta opcional para o cliente de {address}")
   response ="Mensagem recebida com sucesso"
   udp_server_socket.sendto(response.encode(), address)
