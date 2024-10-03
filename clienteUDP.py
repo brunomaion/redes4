@@ -12,7 +12,7 @@ dest_port = 12345 # Porta de destino
 server_address = (dest_ip, dest_port)
 
 # Mensagem a ser enviada ao servidor
-message = "Tchau!!!"
+message = "!"
 udp_client_socket.sendto(message.encode(), server_address)
 # Recebe resposta do servidor
 data, server = udp_client_socket.recvfrom(1024)
